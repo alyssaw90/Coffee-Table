@@ -1,0 +1,23 @@
+{
+  "name": "coffee-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyssaw90/Coffee-Table.git"
+  },
+  "author": "Alyssa Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alyssaw90/Coffee-Table/issues"
+  },
+  "homepage": "https://github.com/alyssaw90/Coffee-Table#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
+}
