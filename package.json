@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/alyssaw90/Coffee-Table#readme",
   "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
     "ejs": "^2.5.2",
     "express": "^4.14.0",
     "express-ejs-layouts": "^2.2.0",
+    "express-session": "^1.14.2",
     "pg": "^6.1.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.27.0"
