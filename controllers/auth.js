@@ -3,18 +3,20 @@
 var express = require('express');
 var router = express.Router();
 
-router.get("/signup", function(){
-    
+router.get("/signup", function(req, res){
+    res.render('signup')
 });
 
-router.post("/signup", function(){
-
-});
-
-router.get("/login", function(){
+router.post("/signup", function(req, res){
 
 });
 
-router.post("/login", function(){
+router.get("/login", function(req, res){
+    res.render('login');
+});
+
+router.post("/login", function(req, res){
 
 });
+
+module.exports = router;
