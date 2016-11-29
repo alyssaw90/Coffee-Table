@@ -4,6 +4,7 @@ var ejsLayouts = require('express-ejs-layouts');
 var session = require('express-session');
 var passport = require('./config/ppConfig');
 var flash = require('connect-flash');
+var isLoggedIn = require('./middleware/isLoggedIn');
 var express = require('express');
 var app = express();
 
@@ -30,5 +31,9 @@ var authCtrl = require('./controllers/auth');
 
 app.use("/", homeCtrl);
 app.use("/auth", authCtrl);
+
+app.get('/profile', isLoggedIn, function(req, res){
+    res.render('profile');
+})
 
 app.listen(3000);

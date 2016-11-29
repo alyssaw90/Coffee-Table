@@ -6,7 +6,7 @@ var db = require("../models");
 var passport = require('../config/ppConfig');
 
 router.get("/signup", function(req, res){
-    res.render('signup')
+    res.render('auth/signup')
 });
 
 router.post("/signup", function(req, res){
@@ -36,7 +36,7 @@ router.post("/signup", function(req, res){
 });
 
 router.get("/login", function(req, res){
-    res.render('login');
+    res.render('auth/login');
 });
 
 router.post("/login", passport.authenticate("local", {
